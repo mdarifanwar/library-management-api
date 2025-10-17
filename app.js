@@ -23,34 +23,54 @@ app.use('/api/borrow', borrowRoutes);
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({
-    message: 'Library Management API',
+    message: 'Library Management API is running!',
     endpoints: {
       books: {
         'GET /api/books': 'Get all books',
         'GET /api/books/:id': 'Get specific book details',
-        'POST /api/books': 'Add new book',
-        'PUT /api/books/:id': 'Update book',
-        'DELETE /api/books/:id': 'Delete book'
       },
       users: {
         'GET /api/users': 'Get all users',
-        'GET /api/users/:id': 'Get specific user details',
         'GET /api/users/:id/history': 'Get user borrowing history',
-        'POST /api/users': 'Add new user',
-        'PUT /api/users/:id': 'Update user subscription'
       },
       borrow: {
-        'POST /api/borrow/borrow': 'Borrow a book',
-        'POST /api/borrow/return': 'Return a book',
         'GET /api/borrow/history': 'Get all borrowing history'
       }
-    }
+    },
+    test_endpoints: [
+      `${req.protocol}://${req.get('host')}/api/books`,
+      `${req.protocol}://${req.get('host')}/api/users`,
+      `${req.protocol}://${req.get('host')}/api/books/1`
+    ]
   });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Library API server running on http://localhost:${PORT}`);
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
+
+// Handle 404
+app.use('*', (req, res) => {
+  res.status(404).json({
+    success: false,
+    message: 'Route not found',
+    available_routes: [
+      'GET /',
+      'GET /health',
+      'GET /api/books',
+      'GET /api/books/:id',
+      'GET /api/users',
+      'GET /api/users/:id/history',
+      'GET /api/borrow/history'
+    ]
+  });
+});
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Library API server running on http://localhost:${PORT}`);
+  });
+}
 
 module.exports = app;
