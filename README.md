@@ -2,7 +2,7 @@
 
 A complete Library Management System API built with Node.js, Express.js, and JSON file-based data storage.
 
-## Features
+## 🚀 Features
 
 ### Part A: Routing Basics
 - **Books Management**: View all books with search and filtering
@@ -13,4 +13,4 @@ A complete Library Management System API built with Node.js, Express.js, and JSO
 - **Book Details**: Fetch specific book information with dynamic routing
 - **User History**: Retrieve specific user's borrowing history
 
-## Project Structure
+## 📁 Project Structure
