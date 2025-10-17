@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565",
+    "genre": "Fiction",
+    "publishedYear": 1925,
+    "available": true,
+    "description": "A classic novel of the Jazz Age"
+  },
+  {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "9780061120084",
+    "genre": "Fiction",
+    "publishedYear": 1960,
+    "available": false,
+    "description": "A story of racial injustice and childhood innocence"
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "9780451524935",
+    "genre": "Dystopian",
+    "publishedYear": 1949,
+    "available": true,
+    "description": "A dystopian social science fiction novel"
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "isbn": "9780141439518",
+    "genre": "Romance",
+    "publishedYear": 1813,
+    "available": true,
+    "description": "A romantic novel of manners"
+  },
+  {
+    "id": 5,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "isbn": "9780547928227",
+    "genre": "Fantasy",
+    "publishedYear": 1937,
+    "available": true,
+    "description": "A fantasy novel about Bilbo Baggins' adventure"
+  },
+  {
+    "id": 6,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "isbn": "9780590353427",
+    "genre": "Fantasy",
+    "publishedYear": 1997,
+    "available": false,
+    "description": "The first book in the Harry Potter series"
+  }
+]

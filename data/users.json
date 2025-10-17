@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "membershipType": "Premium",
+    "joinDate": "2023-01-15",
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "membershipType": "Standard",
+    "joinDate": "2023-03-20",
+    "active": true
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "email": "bob@example.com",
+    "membershipType": "Standard",
+    "joinDate": "2023-02-10",
+    "active": false
+  },
+  {
+    "id": 4,
+    "name": "Alice Brown",
+    "email": "alice@example.com",
+    "membershipType": "Premium",
+    "joinDate": "2023-04-05",
+    "active": true
+  },
+  {
+    "id": 5,
+    "name": "Charlie Wilson",
+    "email": "charlie@example.com",
+    "membershipType": "Standard",
+    "joinDate": "2023-05-12",
+    "active": true
+  }
+]
