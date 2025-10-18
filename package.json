@@ -2,11 +2,10 @@
   "name": "library-management-api",
   "version": "1.0.0",
   "description": "Library Management API with Node.js and Express",
-  "main": "api/index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node api/index.js",
-    "dev": "nodemon api/index.js",
-    "vercel-build": "echo 'Building for Vercel'"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "express": "^4.18.2",
